@@ -1,6 +1,6 @@
 :root {
     --primary-color: #fbfdff;
-    --secondary-color: rgba(220, 37, 37, 0.872);
+    --secondary-color: rgba(237, 24, 24);
     --accent1-color: rgba(237, 24, 24, 0.5);
     --accent2-color: rgb(32, 16, 16);
     --heading-font: "Times New Roman", "Georgia", serif;
@@ -95,12 +95,15 @@ h1 {
 }
 
 article {
-    position: absolute;
     bottom: 20px;
     width: 96%;
     padding: 4px;
     background-color: var(--accent1-color);
     color: rgba(255, 255, 255, 0.998);
+}
+
+.hero article {
+    position: absolute;
 }
 
 .hero article img {
@@ -112,7 +115,7 @@ article {
 }
 
 section h2 {
-    background-color: rgba(237, 24, 24);
+    background-color: var(--secondary-color);
     text-align: center;
     height: 50px;
     padding: 10px 0 10px 0;
