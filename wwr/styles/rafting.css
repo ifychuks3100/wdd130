@@ -18,7 +18,7 @@ header {
     background-color: var(--primary-color);
     color: var(--accent2-color);
     display: grid;
-    grid-template-columns: auto 70%;
+    grid-template-columns: auto 60%;
     justify-content: space-between;
     align-items: center;
 }
@@ -32,10 +32,10 @@ section {
 }
 
 header img {
-    height: 70px;
+    height: 90px;
     width: 70px;
     border-radius: 10%;
-    margin: 15px 2px 0px 10px;
+    margin: 15px 2px 0px 50px;
 }
 
 header nav {
@@ -194,5 +194,5 @@ footer {
 }
 
 footer p {
-    margin-right: 30px;
+    margin-right: 60px;
 }
