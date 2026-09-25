@@ -24,6 +24,7 @@ nav a {
     display: block;
     padding: 20px;
     text-decoration: none;
+    border-bottom: 1px solid #777;
 }
 
 h1 {
@@ -72,7 +73,7 @@ main img {
 
 .grid {
     display: grid;
-    align-items: center;
+    grid-template-columns: 1fr 1fr;
 
 }
 
