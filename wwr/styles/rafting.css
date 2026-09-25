@@ -1,7 +1,7 @@
 :root {
     --primary-color: #fbfdff;
     --secondary-color: rgba(237, 24, 24);
-    --accent1-color: rgba(237, 24, 24, 0.5);
+    --accent1-color: rgb(200 20 20);
     --accent2-color: rgb(32, 16, 16);
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
@@ -93,6 +93,10 @@ h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+}
+
+h2 {
+    color: rgb(255 255 255);
 }
 
 ul {
