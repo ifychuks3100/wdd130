@@ -17,29 +17,72 @@
 header {
     background-color: var(--primary-color);
     color: var(--accent2-color);
-}
-
-body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
+    display: grid;
+    grid-template-columns: auto 70%;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header,
 main,
-footer {
+footer,
+section {
     width: 840px;
     margin: 0 auto;
 }
 
 header img {
-    height: 60px;
+    height: 70px;
+    width: 70px;
     border-radius: 10%;
-    margin: 15px 9px 0px;
+    margin: 15px 2px 0px 10px;
 }
 
 header nav {
     margin: 0px;
-    padding: 0 30px;
+    padding: 0 10px;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+figure {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    place-items: center;
+
+}
+
+figure img {
+    display: block;
+}
+
+figure img {
+    width: 150px;
+    height: 100px;
+    margin: 10px;
+}
+
+/* .second h2 {
+    grid-column: 1/6;
+} */
+
+section h2 {
+    grid-column: 1/4;
+}
+
+.first img {
+    width: 300px;
+    height: 200px;
+    margin-top: 25px;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
 }
 
 footer nav a img {
@@ -50,6 +93,11 @@ h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 nav,
@@ -119,4 +167,15 @@ section h2 {
     text-align: center;
     height: 50px;
     padding: 10px 0 10px 0;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+footer p {
+    margin-right: 30px;
 }
