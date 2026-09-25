@@ -41,6 +41,9 @@ header img {
 header nav {
     margin: 0px;
     padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .first {
