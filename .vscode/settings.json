@@ -57,5 +57,12 @@
   "chat.includeReferencedInstructions": true,
   "chat.useAgentsMdFile": true,
   // limit Intellisense help in the terminal
-  "terminal.integrated.initialHint": false
+  "terminal.integrated.initialHint": false,
+  "python-envs.pythonProjects": [
+    {
+      "path": ".",
+      "envManager": "ms-python.python:system",
+      "packageManager": "ms-python.python:pip"
+    }
+  ]
 }
