@@ -1,7 +1,7 @@
 :root {
     --primary-color: #fbfdff;
-    --secondary-color: rgb(220 20 20);
-    --accent1-color: rgb(200 20 20);
+    --secondary-color: rgb(228, 35, 35);
+    --accent1-color: rgb(11, 1, 1);
     --accent2-color: rgb(32, 16, 16);
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
@@ -46,46 +46,19 @@ header nav {
     justify-content: space-between;
 }
 
-.first {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 0;
-}
-
-figure {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-
-section {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    margin: 0;
-}
-
-.second {
-    margin: 0;
-}
-
-figure img {
-    width: 150px;
-    height: 100px;
-    margin: 7px;
-    display: block;
-}
-
-.first img {
-    width: 300px;
-    height: 200px;
-    margin-top: 25px;
-}
-
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 70px;
+    background-color: var(--secondary-color);
+    color: white;
+    opacity: .9;
 }
 
 footer nav a img {
@@ -93,13 +66,14 @@ footer nav a img {
 }
 
 h1,
-h2 {
+.hero p {
+    color: white;
     font-family: var(--heading-font);
-    color: var(--primary-color);
 }
 
 h2 {
-    color: rgb(255 255 255);
+    font-family: var(--heading-font);
+    color: black;
 }
 
 ul {
@@ -107,92 +81,116 @@ ul {
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-nav,
-p,
-section,
-article {
+nav {
     margin: 16px;
     padding: 8px;
 
 }
 
-aside {
-    /* border: 3px dotted black; */
-    background-color: var(--accent1-color);
-    opacity: 0.7;
-    width: 100%;
-}
-
-.socialmedia a {
-    text-decoration: none;
-}
-
 .hero {
-    position: relative;
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin: 0 0;
-}
-
-h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: rgba(255, 255, 255, 0.998);
-}
-
-article {
-    bottom: 20px;
-    width: 96%;
-    padding: 4px;
-    background-color: var(--accent1-color);
-    color: rgba(255, 255, 255, 0.998);
-}
-
-.hero article {
-    position: absolute;
-}
-
-.hero article img {
-    float: right;
-    width: 125px;
-    margin: 2px;
-    box-shadow: 0 0 10px grey;
-
-}
-
-.first h2 {
+    width: 840px;
+    height: 25vh;
+    align-content: center;
+    justify-self: center;
+    place-items: center;
     background-color: var(--secondary-color);
-    text-align: center;
-    height: 50px;
-    padding: 10px 0 10px 0;
-    grid-column: 1/4;
-
+    opacity: .9;
 }
 
-.second h2 {
-    grid-column: 1/6;
-    background-color: var(--secondary-color);
-    text-align: center;
-    height: 50px;
-    padding: 10px 0 10px 0;
-}
-
-footer {
+.third {
     display: flex;
     flex-direction: row;
-    justify-content: end;
-    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+    background-color: rgba(193, 190, 190, 0.58);
 }
 
-footer p {
-    margin-right: 60px;
+iframe {
+
+    margin: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 15px;
+
+    height: 70vh;
+    width: auto;
+    margin: 20px 5px;
+}
+
+.inner {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding: 10px;
+    place-items: start;
+    place-self: start;
+    gap: 10px;
+
+}
+
+.inner #purpose {
+    grid-row: 1/4;
+
+}
+
+.form .details input {
+    width: 250px;
+    height: 5vh;
+    padding: 10px;
+
+    border-radius: 5px;
+}
+
+.purpose label {
+    align-self: center;
+
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    width: 310px;
+    height: 60px;
+}
+
+button {
+    width: 380px;
+    height: 6vh;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.fourth img {
+    width: 40vh;
+    height: 50vh;
+
+    margin: 0 30px;
+
+}
+
+figcaption {
+    justify-self: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.fourth {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 20% 80%;
+
+    height: 75vh;
+
+}
+
+.fourth h2 {
+    grid-column: 1/4;
+    place-self: center;
+    font-size: 35px;
 }
