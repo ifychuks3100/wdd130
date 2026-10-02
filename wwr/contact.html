@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | The Rapids</title>
+    <title>Contact Us | The Rapids</title>
     <link rel="stylesheet" href="styles/rafting.css">
     <meta name="description"
       content="This is my rafting company project, you can contact us using the form below.">
@@ -42,7 +42,7 @@
                   width="400" height="400" allowfullscreen="" loading="lazy"
                   referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
             <div class=" form">
-                <form action="">
+                <form action="form">
                     <div class="inner details">
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" placeholder="john Doe">
@@ -52,19 +52,20 @@
                           placeholder="john_doe@email.com">
                     </div>
                     <div class="inner purpose">
-                        <label for="purpose" id="purpose"> Message Purpose </label>
-                        <label for="purpose"><input type="radio" name="radio"> General
+                        <label for="radio" id="purpose"> Message Purpose </label>
+                        <label for="radio"><input type="radio" name="radio" id="radio"> General
                             Inquiry</label>
-                        <label for="purpose"><input type="radio" name="radio"> Reservation
+                        <label for="radio"><input type="radio" name="radio" id="radio"> Reservation
                             Question</label>
-                        <label for="purpose"><input type="radio" name="radio"> Website
+                        <label for="radio"><input type="radio" name="radio" id="radio"> Website
                             Suggestion</label>
                     </div>
                     <div class="inner message">
 
                         <label for="message">Message</label>
                         <textarea name="message" id="message" placeholder="Type here"></textarea>
-                        <label for=""><input type="checkbox"> Please Subscribe me to the monthly
+                        <label for="checkbox"><input type="checkbox" name="checkbox" id="checkbox">
+                            Please Subscribe me to the monthly
                             newsletter</label>
                     </div>
 
