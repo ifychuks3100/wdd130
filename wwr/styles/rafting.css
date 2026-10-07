@@ -193,7 +193,7 @@ article {
    CONTACT PAGE HERO
 ========================= */
 
-main:has(.third) .hero {
+main .hero {
     height: 30vh;
 
     display: flex;
@@ -207,7 +207,7 @@ main:has(.third) .hero {
     color: white;
 }
 
-main:has(.third) .hero h1 {
+main .hero h1 {
     position: static;
     width: auto;
 
@@ -218,7 +218,7 @@ main:has(.third) .hero h1 {
     color: white;
 }
 
-main:has(.third) .hero p {
+main .hero p {
     margin: 3px;
     padding: 2px;
     color: white;
@@ -388,7 +388,7 @@ button {
 
 .fourth {
     display: grid;
-    width: 100%;
+    width: 840px;
 
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 20% 80%;
