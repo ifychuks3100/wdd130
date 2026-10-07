@@ -205,8 +205,8 @@ article {
 ========================= */
 
 main:has(.third) .hero {
-    height: 30vh;
-
+    height: 15rem;
+    display: block;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -389,17 +389,18 @@ figcaption {
 ========================= */
 
 .third {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-
+    display: grid;
+    grid-template-columns: 50% 50%;
     gap: 5px;
+    height: 40rem;
 
     background-color: rgba(245, 245, 245, 0.9);
 
     margin: 0;
     padding: 10px;
+}
+.third-inner{
+    height: 100%;
 }
 
 iframe {
@@ -461,11 +462,12 @@ iframe {
 }
 
 /* =========================
-   FORM
+   CONTACT PAGE FORM
 ========================= */
 
 form {
     display: flex;
+    display: block;
     flex-direction: column;
     justify-content: space-around;
 
@@ -535,7 +537,7 @@ button {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 20% 80%;
 
-    height: 75vh;
+    height: 25rem;
 
     margin: 0;
 }
