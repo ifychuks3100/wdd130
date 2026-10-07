@@ -392,7 +392,7 @@ figcaption {
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 5px;
-    height: 40rem;
+    height: 35rem;
 
     background-color: rgba(245, 245, 245, 0.9);
 
@@ -519,8 +519,8 @@ textarea {
 }
 
 button {
-    width: 380px;
-    height: 6vh;
+    width: 8rem;
+    height: 2rem;
 
     border: 2px solid black;
     border-radius: 5px;
