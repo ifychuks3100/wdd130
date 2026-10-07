@@ -203,7 +203,6 @@ main:has(.third) .hero {
 
     background-color: var(--secondary-color);
     opacity: 0.9;
-
     color: white;
 }
 
