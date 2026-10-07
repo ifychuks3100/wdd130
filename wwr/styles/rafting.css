@@ -87,6 +87,61 @@ article {
 }
 
 /* =========================
+   HOME PAGE HERO
+========================= */
+.home-hero {
+    /* border: 2px solid black; */
+    padding: 0;
+    margin: 0;
+}
+
+.home-hero div{
+    position: relative;
+    width: 100%;
+    /* border: 2px solid black; */
+    
+}
+.home-hero img{
+    width: 100%;
+    margin: 0;
+}
+
+.home-hero article{
+    position: absolute;
+    background-color: rgba(29, 11, 227, 0.24);
+    top: 20%;
+    height: 83vh;
+    color: white;
+    width: 25%;
+    /* border: 2px solid black; */
+    margin: 0;
+    padding: 5% 2%;
+    box-shadow: 10px 0 50px rgba(9, 1, 249, 0.368);
+
+
+}
+.home-hero p, .home-hero h1{
+    margin: 0;
+    line-height: 0.9;
+}
+.home-hero h1{
+    font-family: 'phyllis';
+    font-size: 40px;
+}
+.home-hero button{
+    width: 74%;
+    height: 7vh;
+    border: 0;
+    /* border: 2px solid black; */
+    padding: 3%;
+    color: white;
+    margin: 10px;
+    background-color: red;
+}
+.home-hero button:hover{
+    background-color:  rgb(38, 0, 255);
+}
+/* =========================
    ABOUT PAGE HERO
 ========================= */
 
@@ -351,10 +406,10 @@ button {
 }
 
 .fourth img {
-    width: 40vh;
-    height: 50vh;
+    width: 60%;
+    height: 50%;
 
-    margin: 0 30px;
+    margin: 0 10px;
 }
 
 /* =========================
@@ -369,6 +424,7 @@ footer {
     align-items: center;
 
     gap: 70px;
+    
 
     background-color: var(--secondary-color);
     color: white;
