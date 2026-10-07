@@ -193,7 +193,7 @@ article {
    CONTACT PAGE HERO
 ========================= */
 
-main .hero {
+main:has(.third) .hero {
     height: 30vh;
 
     display: flex;
@@ -207,7 +207,7 @@ main .hero {
     color: white;
 }
 
-main .hero h1 {
+main:has(.third) .hero h1 {
     position: static;
     width: auto;
 
@@ -218,7 +218,7 @@ main .hero h1 {
     color: white;
 }
 
-main .hero p {
+main:has(.third) .hero p {
     margin: 3px;
     padding: 2px;
     color: white;
@@ -407,8 +407,8 @@ button {
 }
 
 .fourth img {
-    width:15rem;
-    height: 13rem;
+    width: 60%;
+    height: 50%;
 
     margin: 0 10px;
 }
