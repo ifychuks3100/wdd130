@@ -112,21 +112,21 @@ article {
 .home-hero article{
     position: absolute;
     background-color: rgba(29, 11, 227, 0.24);
-    top: 5%;
-    left: 2%;
+    top: 1%;
+    left: 1%;
     height: 70%;
     color: white;
-    width: 25%;
+    width: 35%;
     /* border: 2px solid black; */
-    margin: 5px;
-    padding: 2% 2%;
+    margin: 1px;
+    padding: 5% 1%;
     box-shadow: 10px 0 100px rgba(9, 1, 249, 0.368);
 
 
 }
 .home-hero p, .home-hero h1{
     margin: 0;
-    line-height: 0.9;
+    line-height: 1;
 }
 .home-hero h1{
     font-family: 'phyllis';
