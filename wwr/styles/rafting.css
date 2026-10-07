@@ -93,10 +93,11 @@ article {
     /* border: 2px solid black; */
     padding: 0;
     margin: 0;
+    position: relative;
 }
 
 .home-hero div{
-    position: relative;
+    /* position: relative; */
     width: 100%;
     /* border: 2px solid black; */
     
@@ -104,19 +105,22 @@ article {
 .home-hero img{
     width: 100%;
     margin: 0;
+    display: block;
+    border: 2px solid black;
 }
 
 .home-hero article{
     position: absolute;
     background-color: rgba(29, 11, 227, 0.24);
-    top: 20%;
-    height: 83vh;
+    top: 5%;
+    left: 2%;
+    height: 70%;
     color: white;
     width: 25%;
     /* border: 2px solid black; */
-    margin: 0;
-    padding: 5% 2%;
-    box-shadow: 10px 0 50px rgba(9, 1, 249, 0.368);
+    margin: 5px;
+    padding: 2% 2%;
+    box-shadow: 10px 0 100px rgba(9, 1, 249, 0.368);
 
 
 }
