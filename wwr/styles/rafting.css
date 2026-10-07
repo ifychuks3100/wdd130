@@ -106,7 +106,7 @@ article {
     width: 100%;
     margin: 0;
     display: block;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 .home-hero article{
@@ -226,7 +226,37 @@ main:has(.third) .hero p {
     padding: 2px;
     color: white;
 }
+/* =========================
+   HOME PAGE ADVENTURE
+========================= */
 
+.adventure{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    /* border: 1px solid black; */
+    margin: 0;
+
+}
+.adventure article{
+    /* border: 1px solid black; */
+    text-align: left;
+    padding: 9px 5px;
+    display: block;
+    font-family: 'phyllis';
+    font-size: 20px;
+}
+.adventure p{
+    margin: 5px 0;
+    /* border: 1px solid black; */
+    padding: 0;
+    font-size: 15px;
+}
+
+.adventure img{
+    width: 100%;
+    margin: 5px 20px 0 0;
+    display: block;
+}
 /* =========================
    ABOUT - HISTORY
 ========================= */
