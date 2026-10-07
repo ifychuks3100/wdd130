@@ -134,7 +134,7 @@ article {
 }
 .home-hero button{
     width: 74%;
-    height: 7vh;
+    height: 3rem;
     border: 0;
     /* border: 2px solid black; */
     padding: 3%;
@@ -399,6 +399,59 @@ iframe {
     width: 350px;
     height: 300px;
     margin: 20px;
+}
+
+/* =========================
+   HOME PAGE FORM
+========================= */
+
+.current{
+    display: grid;
+    display: block;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0;
+    margin: 20px;
+    height: 10rem;
+    /* border: 2px solid black; */
+}
+
+.current .inner1{
+    
+    /* border: 2px solid black; */
+    height: 50%;
+    margin: 0;
+    line-height: 0.5;
+    font-size: 15px;
+    justify-items: center;
+
+}
+.current form{
+    margin: 0;
+    /* border: 2px solid black; */
+    height: 50%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    place-self: center;
+}
+.current form div{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.current a button{
+    width: 10rem;
+    justify-items: center;
+    border: 0;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.772);
+}
+.current button:hover{
+    background-color:  rgba(38, 0, 255, 0.82);
+}
+
+.current a{
+    justify-self: center;
 }
 
 /* =========================
