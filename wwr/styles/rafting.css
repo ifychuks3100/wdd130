@@ -530,7 +530,7 @@ figcaption {
 .trips {
     display: grid;
     grid-template-rows: 10% 90%;
-    height: 35rem;
+    height: 32rem;
     gap: 0;
     width: 100%;
     margin: 0;
@@ -557,7 +557,7 @@ figcaption {
 
 .features div {
     width: 90%;
-    height: 100%;
+    height: 94%;
     /* border: 2px solid black; */
     margin: 0 auto;
     border-radius: 20px;
@@ -566,13 +566,18 @@ figcaption {
 
 }
 
+.features div h3 {
+    place-self: center;
+    font-size: 17px;
+}
+
 .features img {
     height: 10rem;
     width: 100%;
 }
 
 .features p {
-    font-size: .9rem;
+    font-size: .8rem;
     margin: 0;
     font-weight: 700;
 
@@ -747,9 +752,14 @@ textarea {
 button {
     width: 8rem;
     height: 2rem;
-
-    border: 2px solid black;
+    color: white;
+    font-weight: 400;
+    background-color: var(--accent1-color);
     border-radius: 5px;
+}
+
+button:hover {
+    background-color: red;
 }
 
 /* =========================
