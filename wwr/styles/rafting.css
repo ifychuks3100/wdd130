@@ -1,7 +1,7 @@
 :root {
     --primary-color: #fbfdff;
-    --secondary-color: rgb(220 20 20);
-    --accent1-color: rgb(200 20 20);
+    --secondary-color: rgb(6, 41, 63);
+    --accent1-color: rgba(14, 3, 3, 0.822);
     --accent2-color: rgb(32, 16, 16);
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
@@ -20,6 +20,10 @@
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
+}
+
+p {
+    font-size: 20px;
 }
 
 header,
@@ -45,9 +49,37 @@ header {
 
 header img {
     height: 90px;
-    width: 70px;
+    width: auto;
     border-radius: 10%;
-    margin: 15px 2px 0 50px;
+    margin: 3px 2px 5px 50px;
+    grid-row: 1/4;
+    grid-column: 1/2;
+    /* border: 2px solid black; */
+}
+
+header div {
+    display: flex;
+    grid-template-rows: repeat(3, 1fr);
+    /* border: 2px solid black; */
+    width: 15rem;
+    height: 6rem;
+}
+
+header #name {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    padding: 0;
+    height: 6rem;
+
+}
+
+header #name p {
+    margin: 2px 2px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 0;
+    color: rgba(9, 9, 39, 0.906);
 }
 
 header nav {
@@ -69,10 +101,12 @@ ul {
     grid-template-columns: repeat(4, 1fr);
     list-style: none;
 }
-ul li{
+
+ul li {
     font-weight: 900;
 }
-nav a:hover{
+
+nav a:hover {
     color: red;
 }
 
@@ -103,20 +137,21 @@ article {
     position: relative;
 }
 
-.home-hero div{
+.home-hero div {
     /* position: relative; */
     width: 100%;
     /* border: 2px solid black; */
-    
+
 }
-.home-hero img{
+
+.home-hero img {
     width: 100%;
     margin: 0;
     display: block;
     /* border: 2px solid black; */
 }
 
-.home-hero article{
+.home-hero article {
     position: absolute;
     background-color: rgba(29, 11, 227, 0.24);
     top: 0%;
@@ -129,17 +164,20 @@ article {
     padding: 5% 1%;
     box-shadow: 10px 20px 100px rgba(9, 1, 249, 0.368);
 
-
 }
-.home-hero p, .home-hero h1{
+
+.home-hero p,
+.home-hero h1 {
     margin: 0;
     line-height: 1;
 }
-.home-hero h1{
+
+.home-hero h1 {
     font-family: 'phyllis';
     font-size: 40px;
 }
-.home-hero button{
+
+.home-hero button {
     width: 74%;
     height: 3rem;
     border: 0;
@@ -149,9 +187,11 @@ article {
     margin: 10px;
     background-color: red;
 }
-.home-hero button:hover{
-    background-color:  rgb(38, 0, 255);
+
+.home-hero button:hover {
+    background-color: rgb(38, 0, 255);
 }
+
 /* =========================
    ABOUT PAGE HERO
 ========================= */
@@ -178,8 +218,6 @@ article {
 
     background-color: var(--accent1-color);
     color: white;
-
-    opacity: 0.7;
 }
 
 .hero article {
@@ -232,19 +270,23 @@ main:has(.third) .hero p {
     margin: 3px;
     padding: 2px;
     color: white;
+    font-size: 20px;
+    font-weight: 700;
 }
+
 /* =========================
    HOME PAGE ADVENTURE
 ========================= */
 
-.adventure{
+.adventure {
     display: grid;
     grid-template-columns: 40% 60%;
     /* border: 1px solid black; */
     margin: 0;
 
 }
-.adventure article{
+
+.adventure article {
     /* border: 1px solid black; */
     text-align: left;
     padding: 9px 5px;
@@ -252,14 +294,15 @@ main:has(.third) .hero p {
     font-family: 'phyllis';
     font-size: 20px;
 }
-.adventure p{
+
+.adventure p {
     margin: 5px 0;
     /* border: 1px solid black; */
     padding: 0;
     font-size: 15px;
 }
 
-.adventure img{
+.adventure img {
     width: 100%;
     margin: 5px 20px 0 0;
     display: block;
@@ -268,11 +311,10 @@ main:has(.third) .hero p {
 /* =========================
    HOME PAGE EXPERIENCE
 ========================= */
-.experience{
+.experience {
     display: grid;
     grid-template-rows: 10% 90%;
     padding: 0;
-
 
     /* height: 90vh; */
     margin: 10px 0;
@@ -281,12 +323,12 @@ main:has(.third) .hero p {
     /* border: 1px solid black; */
 }
 
-.experience h2{
+.experience h2 {
     justify-self: center;
     margin: 10px;
 }
 
-.experience .gallery{
+.experience .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     /* border: 1px solid black; */
@@ -297,22 +339,22 @@ main:has(.third) .hero p {
     place-items: center;
 }
 
-.experience img{
+.experience img {
     width: 100%;
     margin: 0%;
     display: block;
-    
+
 }
-.experience .gallery div{
+
+.experience .gallery div {
     /* border: 2px solid black; */
-   
+
     width: 90%;
     height: 100%;
     margin: 0px;
     background-color: rgb(255, 251, 251);
-    
-}
 
+}
 
 /* =========================
    ABOUT - HISTORY
@@ -399,7 +441,8 @@ figcaption {
     margin: 0;
     padding: 10px;
 }
-.third-inner{
+
+.third-inner {
     height: 100%;
 }
 
@@ -413,7 +456,7 @@ iframe {
    HOME PAGE FORM
 ========================= */
 
-.current{
+.current {
     display: grid;
     display: block;
     grid-template-rows: repeat(2, 1fr);
@@ -423,8 +466,8 @@ iframe {
     /* border: 2px solid black; */
 }
 
-.current .inner1{
-    
+.current .inner1 {
+
     /* border: 2px solid black; */
     height: 50%;
     margin: 0;
@@ -433,7 +476,8 @@ iframe {
     justify-items: center;
 
 }
-.current form{
+
+.current form {
     margin: 0;
     height: 50%;
     display: grid;
@@ -441,23 +485,26 @@ iframe {
     gap: 10px;
     place-self: center;
 }
-.current form div{
+
+.current form div {
     display: flex;
     flex-direction: row;
     gap: 10px;
 }
-.current a button{
+
+.current a button {
     width: 10rem;
     justify-items: center;
     border: 0;
     color: white;
     background-color: rgba(255, 0, 0, 0.772);
 }
-.current button:hover{
-    background-color:  rgba(38, 0, 255, 0.82);
+
+.current button:hover {
+    background-color: rgba(38, 0, 255, 0.82);
 }
 
-.current a{
+.current a {
     justify-self: center;
 }
 
@@ -569,7 +616,6 @@ footer {
     align-items: center;
 
     gap: 70px;
-    
 
     background-color: var(--secondary-color);
     color: white;
@@ -582,7 +628,9 @@ footer nav a img {
 }
 
 footer p {
-    margin-right: 60px;
+    margin-right: 0px;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .socialmedia a {
