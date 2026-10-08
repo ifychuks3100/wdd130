@@ -156,6 +156,17 @@ article {
 
 }
 
+.home-hero h1 {
+    position: absolute;
+    top: 10%;
+    width: 39%;
+    z-index: 1;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    /* border: 2px solid black; */
+}
+
 .home-hero img {
     width: 100%;
     margin: 0;
@@ -163,25 +174,30 @@ article {
     /* border: 2px solid black; */
 }
 
-.home-hero article {
+.home-hero .hero-article {
     position: absolute;
-    background-color: rgba(29, 11, 227, 0.24);
+    background-image: linear-gradient(to right, rgba(23, 23, 87, 0.975), rgba(18, 18, 83, 0.801), rgba(19, 19, 77, 0.027));
     top: 0%;
-    left: 1%;
-    height: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    left: 0%;
+    height: 100%;
     color: white;
     width: 35%;
     /* border: 2px solid black; */
     margin: 1px;
-    padding: 5% 1%;
-    box-shadow: 10px 20px 100px rgba(9, 1, 249, 0.368);
+    padding: 17% 1%;
 
 }
 
-.home-hero p,
-.home-hero h1 {
-    margin: 0;
+.home-hero p {
+    margin: 0px;
     line-height: 1;
+    height: 0;
+    /* border: 2px solid black; */
+    width: 20rem;
+
 }
 
 .home-hero h1 {
@@ -189,19 +205,22 @@ article {
     font-size: 40px;
 }
 
-.home-hero button {
+.home-hero a {
     width: 74%;
     height: 3rem;
     border: 0;
     /* border: 2px solid black; */
     padding: 3%;
     color: white;
-    margin: 10px;
+    text-decoration: none;
+    place-content: center;
+    margin: 5px 0;
     font-weight: 700;
-    background-color: rgba(6, 41, 63, 0.838);
+    border-radius: 20px;
+    background-color: rgb(9, 146, 231);
 }
 
-.home-hero button:hover {
+.home-hero a:hover {
     background-color: red;
 }
 
@@ -217,7 +236,7 @@ article {
 
 }
 
-.adventure article {
+.adventure .adventure-article {
     /* border: 1px solid black; */
     text-align: left;
     padding: 9px 5px;
@@ -334,7 +353,7 @@ article {
     height: 2rem;
 }
 
-.current a button {
+.current button {
     width: 10rem;
     justify-items: center;
     border: 0;
@@ -346,7 +365,7 @@ article {
     background-color: rgba(255, 0, 0, 0.772);
 }
 
-.current a {
+.current button {
     justify-self: center;
 }
 
@@ -358,7 +377,7 @@ article {
     position: relative;
 }
 
-.hero > img {
+.hero img {
     display: block;
     width: 100%;
     height: auto;
@@ -378,18 +397,18 @@ article {
     color: white;
 }
 
-.hero article {
+.hero div {
     position: absolute;
     bottom: 20px;
     width: 96%;
-
+    place-self: center;
     padding: 4px;
 
     background-color: var(--accent1-color);
     color: white;
 }
 
-.hero article img {
+.hero div img {
     float: right;
     width: 125px;
     margin: 2px;
@@ -510,17 +529,25 @@ figcaption {
 
 }
 
-.trips-hero button {
+.trips-hero a {
     margin: 20px;
-    height: 13%;
+    height: 40%;
     font-size: 13px;
     font-weight: 600;
     color: white;
     background-color: rgb(0, 38, 255);
-    border: none
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    text-decoration: none;
 }
 
-.trips-hero button:hover {
+.trips-hero button a {
+
+    color: white;
+}
+
+.trips-hero a:hover {
     background-color: red;
 }
 
